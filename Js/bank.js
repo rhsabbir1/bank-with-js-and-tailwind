@@ -39,12 +39,12 @@ document.getElementById('withdrow-btn').addEventListener('click',function(){
     WithdrowTotal.innerText = totalWithdraw;
 
 
-    // const balanceToatl = document.getElementById('balance-toatl');
-    // const balanceTotalText = balanceToatl.innerText;
-    // const balanceToatlAmount = parseFloat(balanceTotalText)
+    const balanceToatl = document.getElementById('balance-toatl');
+    const balanceTotalText = balanceToatl.innerText;
+    const balanceToatlAmount = parseFloat(balanceTotalText)
 
-    // const newTotalBalance = balanceToatlAmount - withdeawNewAmount;
-    // balanceToatl.innerText = newTotalBalance;
+    const newTotalBalance = balanceToatlAmount - withdeawNewAmount;
+    balanceToatl.innerText = newTotalBalance;
 
 
     WithdrowField.value = '';
