@@ -5,6 +5,13 @@ document.getElementById('depsite-btn').addEventListener('click', function(){
     const depositeNewAmountText = depositeField.value;
     const depositeNewAmount = parseFloat(depositeNewAmountText);
 
+    depositeField.value = '';
+
+    if(isNaN(depositeNewAmount)){
+        alert('Provid valid money')
+        return;
+    }
+
     const depositeElement = document.getElementById('diposite-total');
     const depositePreviousAmountText = depositeElement.innerText;
     const depositePreviousAmount = parseFloat(depositePreviousAmountText)
@@ -19,8 +26,6 @@ document.getElementById('depsite-btn').addEventListener('click', function(){
 
     const newTotalBalance = previousTotalAmount + depositeNewAmount;
     priviousbalancElement.innerText = newTotalBalance;
-
-    depositeField.value = '';
 })
 
 // // withdrow 
@@ -33,6 +38,7 @@ document.getElementById('withdrow-btn').addEventListener('click',function(){
     WithdrowField.value = '';
 
     if(isNaN(withdeawNewAmount)){
+        alert('Provid a valid money')
         return;
     }
   
