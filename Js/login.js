@@ -9,8 +9,8 @@ document.getElementById('submit-btn').addEventListener('click', function(){
     if(email ==='rhsabbir090@gmail.com' && password ==='rhsabbir008'){
         window.location.href ="bank.html";
     }
-    // else{
-    //    alert('Invalid usuer')
-    // }
+    else{
+       alert('Invalid usuer')
+    }
 
 })
