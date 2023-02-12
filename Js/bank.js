@@ -13,40 +13,40 @@ document.getElementById('depsite-btn').addEventListener('click', function(){
     const courrentDepositeAmount = depositePreviousAmount + depositeNewAmount;
     depositeElement.innerText = courrentDepositeAmount;
 
-    // const priviousbalancElement = document.getElementById("balance-toatl");
-    // const previousTotalText = priviousbalancElement.innerText;
-    // const previousTotalAmount = parseFloat(previousTotalText)
+    const priviousbalancElement = document.getElementById("balance-toatl");
+    const previousTotalText = priviousbalancElement.innerText;
+    const previousTotalAmount = parseFloat(previousTotalText)
 
-    // const newTotalBalance = previousTotalAmount + depositeNewAmount;
-    // priviousbalancElement.innerText = newTotalBalance;
+    const newTotalBalance = previousTotalAmount + depositeNewAmount;
+    priviousbalancElement.innerText = newTotalBalance;
 
     depositeField.value = '';
 })
 
 // // withdrow 
 
-// document.getElementById('withdrow-btn').addEventListener('click',function(){
-//     const WithdrowField = document.getElementById('Withdrow-field');
-//     const withdrawText = WithdrowField.value;
-//     const withdeawNewAmount = parseFloat(withdrawText);
+document.getElementById('withdrow-btn').addEventListener('click',function(){
+    const WithdrowField = document.getElementById('Withdrow-field');
+    const withdrawText = WithdrowField.value;
+    const withdeawNewAmount = parseFloat(withdrawText);
   
 
-//     const WithdrowTotal = document.getElementById('Withdrow-total');
-//     const withpreviousText = WithdrowTotal.innerText;
-//     const withdrawPreviousAmount = parseFloat(withpreviousText)
+    const WithdrowTotal = document.getElementById('Withdrow-total');
+    const withpreviousText = WithdrowTotal.innerText;
+    const withdrawPreviousAmount = parseFloat(withpreviousText)
 
-//     const totalWithdraw = withdrawPreviousAmount + withdeawNewAmount;
-//     WithdrowTotal.innerText = totalWithdraw;
-
-
-//     const balanceToatl = document.getElementById('balance-toatl');
-//     const balanceTotalText = balanceToatl.innerText;
-//     const balanceToatlAmount = parseFloat(balanceTotalText)
-
-//     const newTotalBalance = balanceToatlAmount - withdeawNewAmount;
-//     balanceToatl.innerText = newTotalBalance;
+    const totalWithdraw = withdrawPreviousAmount + withdeawNewAmount;
+    WithdrowTotal.innerText = totalWithdraw;
 
 
-//     WithdrowField.value = '';
+    // const balanceToatl = document.getElementById('balance-toatl');
+    // const balanceTotalText = balanceToatl.innerText;
+    // const balanceToatlAmount = parseFloat(balanceTotalText)
+
+    // const newTotalBalance = balanceToatlAmount - withdeawNewAmount;
+    // balanceToatl.innerText = newTotalBalance;
+
+
+    WithdrowField.value = '';
     
-// })
+})
