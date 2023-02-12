@@ -1,27 +1,27 @@
 // // Deposite 
-// document.getElementById('depsite-btn').addEventListener('click', function(){
+document.getElementById('depsite-btn').addEventListener('click', function(){
     
-//     const depositeField = document.getElementById('deposite-field');
-//     const depositeNewAmountText = depositeField.value;
-//     const depositeNewAmount = parseFloat(depositeNewAmountText);
+    const depositeField = document.getElementById('deposite-field');
+    const depositeNewAmountText = depositeField.value;
+    const depositeNewAmount = parseFloat(depositeNewAmountText);
 
-//     const depositeElement = document.getElementById('diposite-total');
-//     const depositePreviousAmountText = depositeElement.innerText;
-//     const depositePreviousAmount = parseFloat(depositePreviousAmountText)
-//     // depositeElement.innerText = depositeNewAmount;
+    const depositeElement = document.getElementById('diposite-total');
+    const depositePreviousAmountText = depositeElement.innerText;
+    const depositePreviousAmount = parseFloat(depositePreviousAmountText)
+    // depositeElement.innerText = depositeNewAmount;
 
-//     const courrentDepositeAmount = depositePreviousAmount + depositeNewAmount;
-//     depositeElement.innerText = courrentDepositeAmount;
+    const courrentDepositeAmount = depositePreviousAmount + depositeNewAmount;
+    depositeElement.innerText = courrentDepositeAmount;
 
-//     const priviousbalancElement = document.getElementById("balance-toatl");
-//     const previousTotalText = priviousbalancElement.innerText;
-//     const previousTotalAmount = parseFloat(previousTotalText)
+    // const priviousbalancElement = document.getElementById("balance-toatl");
+    // const previousTotalText = priviousbalancElement.innerText;
+    // const previousTotalAmount = parseFloat(previousTotalText)
 
-//     const newTotalBalance = previousTotalAmount + depositeNewAmount;
-//     priviousbalancElement.innerText = newTotalBalance;
+    // const newTotalBalance = previousTotalAmount + depositeNewAmount;
+    // priviousbalancElement.innerText = newTotalBalance;
 
-//     depositeField.value = '';
-// })
+    depositeField.value = '';
+})
 
 // // withdrow 
 
