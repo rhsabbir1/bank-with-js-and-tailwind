@@ -29,29 +29,30 @@ document.getElementById('withdrow-btn').addEventListener('click',function(){
     const WithdrowField = document.getElementById('Withdrow-field');
     const withdrawText = WithdrowField.value;
     const withdeawNewAmount = parseFloat(withdrawText);
+
+    WithdrowField.value = '';
+
+    if(isNaN(withdeawNewAmount)){
+        return;
+    }
   
 
     const WithdrowTotal = document.getElementById('Withdrow-total');
     const withpreviousText = WithdrowTotal.innerText;
     const withdrawPreviousAmount = parseFloat(withpreviousText)
 
-    WithdrowField.value = '';
-
-
     const balanceToatl = document.getElementById('balance-toatl');
     const balanceTotalText = balanceToatl.innerText;
-    const balanceToatlAmount = parseFloat(balanceTotalText)
+    const balanceToatlAmount = parseFloat(balanceTotalText);
+
     if(withdeawNewAmount > balanceToatlAmount){
         alert('Invalid Money')
         return;
     }
+
     const totalWithdraw = withdrawPreviousAmount + withdeawNewAmount;
     WithdrowTotal.innerText = totalWithdraw;
 
     const newTotalBalance = balanceToatlAmount - withdeawNewAmount;
     balanceToatl.innerText = newTotalBalance;
-
-
-    
-    
 })
