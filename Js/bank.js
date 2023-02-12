@@ -35,18 +35,23 @@ document.getElementById('withdrow-btn').addEventListener('click',function(){
     const withpreviousText = WithdrowTotal.innerText;
     const withdrawPreviousAmount = parseFloat(withpreviousText)
 
-    const totalWithdraw = withdrawPreviousAmount + withdeawNewAmount;
-    WithdrowTotal.innerText = totalWithdraw;
+    WithdrowField.value = '';
 
 
     const balanceToatl = document.getElementById('balance-toatl');
     const balanceTotalText = balanceToatl.innerText;
     const balanceToatlAmount = parseFloat(balanceTotalText)
+    if(withdeawNewAmount > balanceToatlAmount){
+        alert('Invalid Money')
+        return;
+    }
+    const totalWithdraw = withdrawPreviousAmount + withdeawNewAmount;
+    WithdrowTotal.innerText = totalWithdraw;
 
     const newTotalBalance = balanceToatlAmount - withdeawNewAmount;
     balanceToatl.innerText = newTotalBalance;
 
 
-    WithdrowField.value = '';
+    
     
 })
